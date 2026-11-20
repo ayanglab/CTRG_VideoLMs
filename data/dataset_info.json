@@ -1,0 +1,61 @@
+{
+    "base_cot_train": {
+    "file_name": "base_cot_train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "videos": "videos",
+      "messages": "conversations"
+      }
+  },
+    "base_cot_valid": {
+    "file_name": "base_cot_valid.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "videos": "videos",
+      "messages": "conversations"
+      }
+  },
+    "sft_ab_train": {
+    "file_name": "sft_ab_train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "videos": "videos",
+      "messages": "conversations"
+      }
+  },  
+    "sft_raw_train": {
+    "file_name": "sft_raw_train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "videos": "videos",
+      "messages": "conversations"
+      }
+  }, 
+    "sft_raw_valid": {
+    "file_name": "sft_raw_valid.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "videos": "videos",
+      "messages": "conversations"
+      }
+  }, 
+   "sft_ab_valid": {
+    "file_name": "sft_ab_valid.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "videos": "videos",
+      "messages": "conversations"
+      }
+  },
+  "dpo_ab_train": {
+    "file_name": "dpo_train.json",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "videos": "videos",
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  }
+}

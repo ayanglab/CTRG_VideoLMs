@@ -1,0 +1,18 @@
+[
+  {
+    "id": "valid_1_a_1",
+    "videos": [
+      "valid_1_a_1.mp4"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<video>\nGenerate a report for this patient."
+      },
+      {
+        "from": "gpt",
+        "value": "Lung: When examined in the lung parenchyma window; A few millimetric nonspecific nodules and mild recessions are observed in the upper lobe and lower lobe of the right lung."
+      }
+    ]
+  }
+]
