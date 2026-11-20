@@ -36,8 +36,8 @@ hrct_report_generation_video_vlm/
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/WangYijia1209/hrct-report-generation-video-vlm.git
-cd hrct-report-generation-video-vlm
+git clone https://github.com/ayanglab/CTRG_VideoLMs.git
+
 ```
 
 ### 2. Install LLaMA-Factory
