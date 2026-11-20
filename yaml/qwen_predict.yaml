@@ -1,0 +1,43 @@
+### model
+model_name_or_path: /hrct_report_generation_video_vlm/merged_model/qwen_ab
+template: qwen2_vl
+trust_remote_code: true
+
+### method
+stage: sft
+do_predict: true
+predict_with_generate: true
+
+### vision
+video_fps: 7
+image_max_pixels: 262144 
+video_max_pixels: 40000
+
+### dataset
+eval_dataset: sft_ab_valid # name from dataset_info.json
+dataset_dir: /hrct_report_generation_video_vlm/data
+media_dir: /hrct_report_generation_video_vlm/example_data
+
+cutoff_len: 8192  
+max_samples: 10        #number of validation videos
+overwrite_cache: true
+preprocessing_num_workers: 16 
+
+dataloader_num_workers: 8           
+dataloader_pin_memory: true
+
+### output
+output_dir: /hrct_report_generation_video_vlm/inf_output/qwen_ab
+overwrite_output_dir: true
+logging_steps: 1
+
+### eval
+per_device_eval_batch_size: 1
+ddp_timeout: 180000000
+gradient_accumulation_steps: 2
+
+bf16: true
+quantization_bit: 4
+quantization_method: bitsandbytes
+quantization_device_map: auto
+
